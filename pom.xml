@@ -41,7 +41,6 @@
 	<dependency>
 		<groupId>junit</groupId>
 		<artifactId>junit</artifactId>
-		<scope>test</scope>
 		<version>4.10</version>
 	</dependency>
 	<!-- log4j -->
@@ -76,6 +75,11 @@
 		  <groupId>org.springframework</groupId>
 		  <artifactId>spring-context-support</artifactId>
 		  <version>4.1.3.RELEASE</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.testng</groupId>
+		  <artifactId>testng</artifactId>
+		  <version>RELEASE</version>
 	  </dependency>
   </dependencies>
   
