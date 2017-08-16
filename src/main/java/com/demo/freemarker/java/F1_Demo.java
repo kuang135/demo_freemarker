@@ -34,13 +34,16 @@ public class F1_Demo {
 
         //合并模版和数据模型
         Writer console = new OutputStreamWriter(System.out);
-        template.process(root, console);
+        StringWriter stringWriter = new StringWriter();
+        template.process(root, stringWriter);
+        stringWriter.close();
+        System.out.println(stringWriter.toString());
 
         //out为file类型时，必须关闭
-        root.put("user", "java");
+        /*root.put("user", "java");
 		Writer fileOut = new OutputStreamWriter(new FileOutputStream(new File("f1_demo.java")));
         template.process(root, fileOut);
-        fileOut.close();
+        fileOut.close();*/
 
         //如果是servle他，无须关闭
     }
